@@ -1,0 +1,46 @@
+@import '../../styles/variables.scss';
+
+.container {
+  padding: 24px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    font-weight: 500;
+  }
+
+  .logout {
+    background: none;
+    border: 1px solid $primary-red;  // ← исправлено
+    color: $primary-red;             // ← если используешь
+    padding: 6px 16px;
+    border-radius: $border-radius;
+    cursor: pointer;
+    font-weight: 600;
+    &:hover {
+      background: $primary-red;
+      color: white;
+    }
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

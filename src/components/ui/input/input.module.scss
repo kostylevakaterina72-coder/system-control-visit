@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+
+.input {
+  padding: 12px 16px;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  font-size: 16px;
+  font-family: $font-family;
+  width: 100%;
+  background: $white;
+  transition: border-color 0.2s, box-shadow 0.2s;
+
+  &:focus {
+    border-color: $primary; // бордовый
+    outline: none;
+    box-shadow: 0 0 0 3px rgba($primary, 0.15);
+  }
+
+  &::placeholder {
+    color: #aaa;
+  }
+}
+  

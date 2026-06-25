@@ -1,0 +1,22 @@
+@import '../../../styles/variables.scss';
+
+.button {
+  background: $green;
+  color: $white;
+  border: none;
+  border-radius: $border-radius;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover {
+    background: darken($green, 10%);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}

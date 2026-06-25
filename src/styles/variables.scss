@@ -1,0 +1,24 @@
+// src/styles/variables.scss
+
+// Основные цвета из твоего дизайна
+$primary: #9E6363;
+$primary-light: #CFB5B5;
+$primary-bg: #E3D2D2;
+$bg-body: #F5F5F5;          // общий фон страницы
+
+// 👇 Добавь эту строку
+$background: $bg-body;      // алиас для удобства
+
+$green: #2CDA46;
+$green-dark: #01AE01;
+$red: #DA2C2C;
+
+$white: #FFFFFF;
+$black: #000000;
+$text-primary: #333333;
+$text-secondary: #666666;
+$border-color: #CCCCCC;
+
+$font-family: 'Inter', sans-serif;
+$border-radius: 8px;
+$box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);

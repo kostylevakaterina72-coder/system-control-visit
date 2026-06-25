@@ -1,0 +1,78 @@
+@import '../../styles/variables.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: $bg-body; // #F5F5F5
+}
+
+.card {
+  background: $white;
+  padding: 48px 40px 40px;
+  border-radius: 20px;
+  box-shadow: $box-shadow;
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid $primary-light; // лёгкая рамка
+  transition: box-shadow 0.2s;
+  &:hover {
+    box-shadow: 0 8px 24px rgba($primary, 0.15);
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  color: $primary; // бордовый акцент
+  letter-spacing: -0.5px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  label {
+    font-weight: 500;
+    font-size: 14px;
+    color: $text-secondary;
+  }
+}
+
+// Стили для радио-группы можно подправить через глобальный класс
+// Но я добавлю в сам компонент RadioGroup потом – пока можно оставить.
+
+.submitBtn {
+  margin-top: 8px;
+  width: 100%;
+  background: $green; // зелёный как в дизайне
+  border-radius: $border-radius;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 14px;
+  font-size: 18px;
+  transition: all 0.2s;
+  &:hover {
+    background: darken($green, 10%);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba($green, 0.4);
+  }
+}
+
+.footerText {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  color: $text-secondary;
+  opacity: 0.7;
+}
