@@ -15,6 +15,7 @@ const Login: React.FC = () => {
   const roleOptions = [
     { value: 'student', label: 'Студент' },
     { value: 'teacher', label: 'Преподаватель' },
+    
   ];
 
   const handleSubmit = (e: React.FormEvent) => {
